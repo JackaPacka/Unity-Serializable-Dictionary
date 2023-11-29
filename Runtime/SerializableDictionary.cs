@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace JackR
+namespace SerializableDictionary
 {
     /// <summary>
     /// A serializable dictionary that can be used with Unity's serialization system.
@@ -13,7 +13,8 @@ namespace JackR
     /// <typeparam name="TValue">The type of values in the dictionary.</typeparam>
     [Serializable]
     public class SerializableDictionary<TKey, TValue> : ISerializationCallbackReceiver,
-                                                        IEnumerable<KeyValuePair<TKey, TValue>>
+                                                        IEnumerable<KeyValuePair<TKey, TValue>>,
+                                                        ISerializableDictionary
     {
         #region Properties
 
@@ -21,14 +22,14 @@ namespace JackR
         /// Gets the list of keys in the dictionary.
         /// </summary>
         public List<TKey> Keys => keys;
-        [SerializeField]
+        [SerializeField] [HideInInspector]
         private List<TKey> keys = new();
         
         /// <summary>
         /// Gets the list of values in the dictionary.
         /// </summary>
         public List<TValue> Values => values;
-        [SerializeField]
+        [SerializeField] [HideInInspector]
         private List<TValue> values = new();
         
         /// <summary>
@@ -220,4 +221,6 @@ namespace JackR
         
         public override string ToString() => Dictionary.ToString();
     }
+    
+    public interface ISerializableDictionary { }
 }

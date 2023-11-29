@@ -1,7 +1,7 @@
 {
   "name": "com.jackrandolph.serializabledictionaries",
   "version": "1.0.0",
-  "displayName": "Serializable Dictionaries",
+  "displayName": "Serializable Dictionary",
   "description": "A serializable dictionary collection system for Unity.",
   "unity": "2021.3",
   "documentationUrl": "https://www.jungle.jackedupsoftware.com",
@@ -9,7 +9,5 @@
   "author": {
     "name": "Jack Randolph",
     "email": "jr@jackedupsoftware.com"
-  },
-  "dependencies": {
   }
 }

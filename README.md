@@ -1,10 +1,19 @@
 # SerializableDictionary<TKey, TValue>
 
-A serializable dictionary that can be used with Unity's serialization system.
+A serializable dictionary that can be used with Unity's serialization system. The dictionary works identically to the
+system dictionary, but it can be serialized and deserialized.
+
+You can simply add "Serializable" in front of any dictionary to make it serializable. For example:
+```csharp
+private Dictionary<int, string> myDictionary;
+
+[SerializeField]
+private SerializableDictionary<int, string> mySerializableDictionary;
+```
 
 ## Features
 
-- **Serialization**: The dictionary can be serialized into two lists for Unity's serialization system.
+- **Serialization**: 
 - **Enumeration**: The dictionary can be iterated over using a `foreach` loop.
 - **Key-Value Pair Management**: The dictionary supports adding, removing, and checking the existence of key-value pairs.
 - **Capacity Management**: The dictionary supports ensuring a certain capacity and trimming excess capacity.

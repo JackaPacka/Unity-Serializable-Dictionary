@@ -1,6 +1,6 @@
 {
-    "name": "JackR.SerializableDictionary",
-    "rootNamespace": "JackR",
+    "name": "JackRandolph.SerializableDictionary.Runtime",
+    "rootNamespace": "SerializableDictionary",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

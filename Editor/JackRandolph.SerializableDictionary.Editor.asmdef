@@ -1,0 +1,18 @@
+{
+    "name": "JackRandolph.SerializableDictionary.Editor",
+    "rootNamespace": "SerializableDictionary",
+    "references": [
+        "GUID:5f588733515974d4db4b7fead2ead9ee"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
